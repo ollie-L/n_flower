@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="bach_flower.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="bach_flower.js" type="text/javascript"></script>
+    <title>bach_flower</title>
+  </head>
+  
+  <body>
+      <div class="header">
+          <h1 class="logo">
+              <a href="#">
+              <img src="bfont.png" alt="">
+              </a>
+          </h1>
+          
+          <input type="checkbox" name="" id="nav_control">
+          <label for='nav_control' class="nav_btn">
+            <div class="ham_bar bar_top"></div>
+            <div class="ham_bar bar_middle"></div>
+            <div class="ham_bar bar_bottom"></div>
+              <span>選單</span>
+          </label>
+          <nav>
+            <div class="nav_a">
+            <a href="#">首頁</a>
+            <a href="#draw">線上抽牌</a>
+            <a href="#bach_page">38種花精介紹</a>
+            <a href="#situation">常見應用情境</a>
+            <a href="https://forms.gle/BKUHJ8fbhuCpmNvg6" target="_blank">CONTACT</a>
+            </div>
+        </nav>
+      </div>
+
+
+    <div class="menu" id="menu" data-aos="">
+
+      <div class="menu_title">
+        <p>Bach </br>Flower </br>Remedies</p>
+      </div>
+
+      <div class="arrow"></div>
+
+      <div class="menu_card">
+        <div class="menu_wrap">
+          <div class="menu_pic">
+          </div>
+            <div class="list">
+              <ul>
+                <li><a class="menu_a" href="#draw">線上抽牌</a></li>
+                <li><a class="menu_a" href="#bach_page">巴赫花精</a></li>
+                <li><a class="menu_a" href="#situation">應用情境</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- 第二頁 -->
+    <div class="draw_page" id="draw" data-aos="fade-up">
+      <div class="content">
+        <div class="draw_title">
+          <h1>靜默三秒後，請點選抽牌</h1>
+        </div>
+        <div class="btn_group">
+          <button class="btn btn1" onclick="draw(1,flowerAry,1)" data-aos="fade-down">抽選一張牌卡</button>
+          <!-- <button class="btn btn2" onclick="draw(3,flowerAry,3)">抽三張</button> -->
+          <button class="btn btn3" onclick="draw(6,flowerAry,6)" data-aos="fade-down">
+            抽選六張牌卡
+          </button>
+        </div>
+
+        <div class="result">
+          <div class="result_item" id="img0">
+            <a href="" id="a_href0"
+              ><img
+                class="flower_img"
+                id="pic0"
+                src=""
+                width="150"
+                height="200"
+            /></a>
+            <div class="text pic_text" id="text0"></div>
+            <a href="" id="a_pic0" class="text a_pic" target="_blank"
+              ><p>圖片來源</p></a
+            >
+          </div>
+          <div class="result_item" id="img1">
+            <a href="" id="a_href1"
+              ><img
+                class="flower_img"
+                id="pic1"
+                src=""
+                width="150"
+                height="200"
+            /></a>
+            <div class="text pic_text" id="text1"></div>
+            <a href="" id="a_pic1" class="text a_pic" target="_blank"
+              ><p>圖片來源</p></a
+            >
+          </div>
+          <div class="result_item" id="img2">
+            <a href="" id="a_href2"
+              ><img
+                class="flower_img"
+                id="pic2"
+                src=""
+                width="150"
+                height="200"
+            /></a>
+            <div class="text pic_text" id="text2"></div>
+            <a href="" id="a_pic2" class="text a_pic" target="_blank"
+              ><p>圖片來源</p></a
+            >
+          </div>
+          <div class="result_item" id="img3">
+            <a href="" id="a_href3"
+              ><img
+                class="flower_img"
+                id="pic3"
+                src=""
+                width="150"
+                height="200"
+            /></a>
+            <div class="text pic_text" id="text3"></div>
+            <a href="" id="a_pic3" class="text a_pic" target="_blank"
+              ><p>圖片來源</p></a
+            >
+          </div>
+          <div class="result_item" id="img4">
+            <a href="" id="a_href4"
+              ><img
+                class="flower_img"
+                id="pic4"
+                src=""
+                width="150"
+                height="200"
+            /></a>
+            <div class="text pic_text" id="text4"></div>
+            <a href="" id="a_pic4" class="text a_pic" target="_blank"
+              ><p>圖片來源</p></a
+            >
+          </div>
+          <div class="result_item" id="img5">
+            <a href="" id="a_href5"
+              ><img
+                class="flower_img"
+                id="pic5"
+                src=""
+                width="150"
+                height="200"
+            /></a>
+            <div class="text pic_text" id="text5"></div>
+            <a href="" id="a_pic5" class="text a_pic" target="_blank"
+              ><p>圖片來源</p></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第三頁 38種花精介紹 -->
+    <div class="bach_page" id="bach_page" data-aos="fade-up">
+        <h1>巴赫38種花精</h1>
+      <div class="item_group">
+        <div class="bach_item" id="Agrimony">
+          <h3>
+            龍芽草花精
+            <small>Agrimony</small>
+          </h3>
+          <ul>
+            <li>隱藏憂慮並壓抑內心</li>
+            <li>容易藉由沉溺外在物質或活動,迴避內心的問題</li>
+          </ul>
+          <strong>龍芽草花精能量:勇於面對心裡的問題</strong>
+        </div>
+        <div class="bach_item" id="Aspen">
+          <h3>
+            白楊花精
+            <small>Aspen</small>
+          </h3>
+          <ul>
+            <li>恐懼未知、莫名的害怕、怕鬼</li>
+            <li>容易受外在的環境或情緒影響的敏感體質</li>
+          </ul>
+          <strong>白楊花精能量:心寧安定</strong>
+        </div>
+
+        <div class="bach_item" id="Beech">
+          <h3>
+            山毛櫸花精
+            <small>Beech</small>
+          </h3>
+          <ul>
+            <li>偏見或岐視</li>
+            <li>忍不住批評挑剔，無法包容他人的意見</li>
+          </ul>
+          <strong>山毛櫸花精能量:包容不同的聲音</strong>
+        </div>
+
+        <div class="bach_item" id="Centaury">
+          <h3>
+            矢車菊花精
+            <small>Centaury</small>
+          </h3>
+          <ul>
+            <li>明明不想，也無法開口拒絕</li>
+            <li>迎合別人的期待而委屈自己</li>
+          </ul>
+          <strong>矢車菊花精能量:明確表達立場</strong>
+        </div>
+
+        <div class="bach_item" id="Cerato">
+          <h3>
+            水蕨花精
+            <small>Cerato</small>
+          </h3>
+          <ul>
+            <li>心裡已經有答案卻依賴別人的意見和看法，而不斷詢問著</li>
+            <li>不信任自已的判斷和直覺</li>
+          </ul>
+          <strong>水蕨花精能量:傾聽自己內在的聲音，相信自己的判斷</strong>
+        </div>
+
+        <div class="bach_item" id="Cherry_Plum">
+          <h3>
+            櫻桃李花精
+            <small>Cherry Plum</small>
+          </h3>
+          <ul>
+            <li>怕自己失去控制而一直忍耐著</li>
+            <li>害怕因失控而作出衝動的事，而壓抑著處於爆發邊緣的情緒</li>
+          </ul>
+          <strong>櫻桃李花精能量:明智的看待問題、舒解情緒自然流露</strong>
+        </div>
+
+        <div class="bach_item" id="Chestnut_Bud">
+          <h3>
+            栗苞花精
+            <small>Chestnut Bud</small>
+          </h3>
+          <ul>
+            <li>重複相同的錯誤</li>
+            <li>不知道問題在哪裡</li>
+          </ul>
+          <strong>栗苞花精能量:回到當下，從經驗中學習成長</strong>
+        </div>
+
+        <div class="bach_item" id="Chicory">
+          <h3>
+            菊苣花精
+            <small>Chicory</small>
+          </h3>
+          <ul>
+            <li>對關懷和關愛感到饋乏，具有操控性的關懷</li>
+            <li>控制別人的行為按照自己的方式生活而得到安全感</li>
+          </ul>
+          <strong>菊苣花精能量:無條件的愛</strong>
+        </div>
+
+        <div class="bach_item" id="Clematis">
+          <h3>
+            鐵線蓮花精
+            <small>Clematis</small>
+          </h3>
+          <ul>
+            <li>活在快樂的幻想世界裡，例如追劇、虛擬世界、二次元…</li>
+            <li>對現實生活不感興趣</li>
+          </ul>
+          <strong>鐵線蓮花精能量:築夢踏實、實現夢想</strong>
+        </div>
+
+        <div class="bach_item" id="Crab_Apple">
+          <h3>
+            野生酸蘋果(海棠)花精
+            <small>Crab Apple</small>
+          </h3>
+          <ul>
+            <li>總覺得自己不乾淨，自我厭惡，過度在意自我外表</li>
+            <li>被困在細節裡，容易有潔癖、細節強迫的傾向</li>
+          </ul>
+          <strong>野生酸蘋果花精能量:淨化，接受並喜愛真正的自己</strong>
+        </div>
+
+        <div class="bach_item" id="Elm">
+          <h3>
+            榆樹花精
+            <small>Elm</small>
+          </h3>
+          <ul>
+            <li>暫時性的責任壓力過大</li>
+            <li>短時間過多的事物壓力讓自己失去信心，而退縮</li>
+          </ul>
+          <strong>榆樹花精能量:盡力並心安理得</strong>
+        </div>
+
+        <div class="bach_item" id="Gentian">
+          <h3>
+            龍膽花精
+            <small>Gentian</small>
+          </h3>
+          <ul>
+            <li>因為挫折的經驗受到打擊而消沉沮喪</li>
+            <li>因過往經驗而想法悲觀負面，覺得自己作不到，失去挑戰的心</li>
+          </ul>
+          <strong>龍膽花精能量:提振信心，視挫折為學習的機會</strong>
+        </div>
+
+        <div class="bach_item" id="Gorse">
+          <h3>
+            荊豆花精
+            <small>Gorse</small>
+          </h3>
+          <ul>
+            <li>生命停滯、憂鬱失去希望</li>
+            <li>覺得在困境中任何的嘗試努力都是徒勞的</li>
+          </ul>
+          <strong>荊豆花精能量:黑夜的盡頭就是陽光，恢復希望</strong>
+        </div>
+
+        <div class="bach_item" id="Heather">
+          <h3>
+            石楠花精
+            <small>Heather</small>
+          </h3>
+          <ul>
+            <li>只關注自已的問題，一直訴說自己的感受，忘了別人的立場感受</li>
+            <li>不甘寂寞的不停找人說話，喋喋不休的談論自己的事</li>
+          </ul>
+          <strong>石楠花精能量:找到內在的平靜，自在的獨處</strong>
+        </div>
+
+        <div class="bach_item" id="Holly">
+          <h3>
+            冬青花精
+            <small>Holly</small>
+          </h3>
+          <ul>
+            <li>感到復仇憤怒，無法原諒的憎恨心態</li>
+            <li>易妒嫉、猜疑他人的動機、生氣狂暴、冷戰</li>
+          </ul>
+          <strong>冬青花精能量:寬容體諒，消融消融強烈負面情緒</strong>
+        </div>
+
+        <div class="bach_item" id="Honeysuckle">
+          <h3>
+            忍冬花精
+            <small>Honeysuckle</small>
+          </h3>
+          <ul>
+            <li>沈溺的過去的美好回憶中，難以忘懷美好的過往</li>
+            <li>活在回憶裡，不願回到現實生活中</li>
+          </ul>
+          <strong>忍冬花精能量:讓過去美好的經歷成為今後生活的原動力</strong>
+        </div>
+
+        <div class="bach_item" id="Hornbeam">
+          <h3>
+            鵝耳櫪花精
+            <small>Hornbeam</small>
+          </h3>
+          <ul>
+            <li>實際沒問但，但就不想作，精神倦怠、提不起勁</li>
+            <li>星期一症候群、缺乏投入的熱忱</li>
+          </ul>
+          <strong>鵝耳櫪花精能量:重拾熱情、消除拖延</strong>
+        </div>
+
+        <div class="bach_item" id="Impatiens">
+          <h3>
+            鳳仙花花精
+            <small>Impatiens</small>
+          </h3>
+          <ul>
+            <li>脾氣急躁、沒耐心、易怒、不喜歡被限制</li>
+            <li>不喜歡與別人合作，覺得自己來比較快，容易神經緊繃</li>
+          </ul>
+          <strong>鳳仙花花精能量:耐心而從容</strong>
+        </div>
+
+        <div class="bach_item" id="Larch">
+          <h3>
+            落葉松花精
+            <small>Larch</small>
+          </h3>
+          <ul>
+            <li>長期自卑感、缺乏自信</li>
+            <li>總覺得自己比別人差，還沒開始就覺得自己會失敗</li>
+          </ul>
+          <strong>落葉松花精能量:自信不比較、勇於嚐試</strong>
+        </div>
+
+        <div class="bach_item" id="Mimulus">
+          <h3>
+            溝酸漿花精
+            <small>Mimulus</small>
+          </h3>
+          <ul>
+            <li>對特定(已知)的人事物感到恐懼、怕高、怕昆蟲、怕黑…</li>
+            <li>通常害羞而膽小</li>
+          </ul>
+          <strong>溝酸漿花精能量:勇敢樂觀</strong>
+        </div>
+
+        <div class="bach_item" id="Mustard">
+          <h3>
+            芥末花精
+            <small>Mimulus</small>
+          </h3>
+          <ul>
+            <li>沒有原因的突然感到沮喪低落</li>
+            <li>感到鳥雲罩頂、起伏不定的沮喪</li>
+          </ul>
+          <strong>芥末花精能量:正面陽光、驅散陰鬱</strong>
+        </div>
+
+        <div class="bach_item" id="Oak">
+          <h3>
+            橡樹花精
+            <small>Oak</small>
+          </h3>
+          <ul>
+            <li>即便已是身體的極限也不肯休息，強烈責任感</li>
+            <li>無法意識到己過度疲勞</li>
+          </ul>
+          <strong>橡樹花精能量:認清身體的極限，重視自我狀態</strong>
+        </div>
+
+        <div class="bach_item" id="Olive">
+          <h3>
+            橄欖花精
+            <small>Olive</small>
+          </h3>
+          <ul>
+            <li>身心俱疲、精疲力盡、感到耗竭</li>
+            <li>感覺休息再多也無法回復活力</li>
+          </ul>
+          <strong>橄欖花精能量:恢復元氣、得到充份的休息和支持</strong>
+        </div>
+
+        <div class="bach_item" id="Pine">
+          <h3>
+            松樹花精
+            <small>Pine</small>
+          </h3>
+          <ul>
+            <li>過度嚴格約束自己，經常自責、感到內咎</li>
+            <li>即使不是自己的錯，也總是道歉</li>
+          </ul>
+          <strong>松樹花精能量:停止自我苛責，寬恕自己</strong>
+        </div>
+
+        <div class="bach_item" id="Red_Chestnut">
+          <h3>
+            紅栗花精
+            <small>Red Chestnut</small>
+          </h3>
+          <ul>
+            <li>為所愛的人感到擔心，總是往壞處想</li>
+            <li>害怕不幸會發生在所愛的人身上，過度擔心而自尋煩惱</li>
+          </ul>
+          <strong>紅栗花精能量:信相對方是受到祝福的</strong>
+        </div>
+
+        <div class="bach_item" id="Rock_Rose">
+          <h3>
+            岩薔薇花精
+            <small>Rock Rose</small>
+          </h3>
+          <ul>
+            <li>感到極度驚嚇或恐懼、惶恐，作惡夢</li>
+            <li>遭遇到預料之外的事而感到震驚、驚嚇</li>
+          </ul>
+          <strong>岩薔薇花精能量:沉著穩定、相信自己能安然渡過</strong>
+        </div>
+
+        <div class="bach_item" id="Rock_Water">
+          <h3>
+            岩水花精
+            <small>Rock Water</small>
+          </h3>
+          <ul>
+            <li>自我要求過高，極端的自律生活，生活及思想缺乏彈性</li>
+            <li>過度期許自已成為完美的人</li>
+          </ul>
+          <strong>岩水花精能量:靈活彈性、善待自己</strong>
+        </div>
+
+        <div class="bach_item" id="Scleranthus">
+          <h3>
+            線球草花精
+            <small>Scleranthus</small>
+          </h3>
+          <ul>
+            <li>猶豫不決、優柔寡斷、無法在二者間作出選擇</li>
+            <li>難以作決定，選擇了往快後悔,有時也在情緒間搖擺，如:開心或沮喪</li>
+          </ul>
+          <strong>線球草花精能量:果斷不猶疑己</strong>
+        </div>
+
+        <div class="bach_item" id="Star_Of_Bethlehem">
+          <h3>
+            聖星百合花精
+            <small>Star Of Bethlehem</small>
+          </h3>
+          <ul>
+            <li>難以平復的心靈創傷，驚嚇過後、遭逢意外</li>
+            <li>近期或久遠的心靈創傷</li>
+          </ul>
+          <strong>聖星百合花精能量:撫平創傷，心靈得到慰藉</strong>
+        </div>
+
+        <div class="bach_item" id="Sweet_Chestnut">
+          <h3>
+            甜栗花精
+            <small>Sweet Chestnut</small>
+          </h3>
+          <ul>
+            <li>用盡所有的方法，仍然無法突破困境，感覺無法再堅持下去</li>
+            <li>感到嚴重的心理壓力，不知該何去何從</li>
+          </ul>
+          <strong>甜栗花精能量:保有光明希望，不至於陷入絕望</strong>
+        </div>
+
+        <div class="bach_item" id="Vervain">
+          <h3>
+            馬鞭草花精
+            <small>Vervain</small>
+          </h3>
+          <ul>
+            <li>過度熱衷而想強烈說服別人，並相信樣會讓別人的生活更美好</li>
+            <li>強烈希望改變周遭的人的想法，使其認同自己的人生觀</li>
+          </ul>
+          <strong>馬鞭草花精能量:理解並接受他人的想法，尊重別人的自由</strong>
+        </div>
+
+        <div class="bach_item" id="Vine">
+          <h3>
+            葡萄花精
+            <small>Vine</small>
+          </h3>
+          <ul>
+            <li>控制、指揮慾強烈，慣於命令他人，而顯得蠻橫霸道</li>
+            <li>相信別人遵從他的做法才是最好的，沒有妥協的空間</li>
+          </ul>
+          <strong>葡萄花精能量:胸襟廣闊，果決而不獨斷</strong>
+        </div>
+
+        <div class="bach_item" id="Walnut">
+          <h3>
+            胡桃花精
+            <small>Walnut</small>
+          </h3>
+          <ul>
+            <li>需要適應新生活、新環境、人生的新階段</li>
+            <li>內心已決定的事情，容易受到外在的影響</li>
+          </ul>
+          <strong
+            >胡桃花精能量:適應改變的人、事物、環境，順利過渡到新階段</strong
+          >
+        </div>
+
+        <div class="bach_item" id="Water_Violet">
+          <h3>
+            水堇花精
+            <small>Water Violet</small>
+          </h3>
+          <ul>
+            <li>自我優越感、難以敞開心胸與人交往</li>
+            <li>顯得孤傲不群，不喜與人往來，喜愛獨處</li>
+          </ul>
+          <strong
+            >水堇花精能量:敞開情感，融入群體相互交流，同時保有自己的冷靜與智慧</strong
+          >
+        </div>
+
+        <div class="bach_item" id="White_Chestnut">
+          <h3>
+            白栗花精
+            <small>White Chestnut</small>
+          </h3>
+          <ul>
+            <li>思慮過度，無法控制在腦裡不斷的自問自答</li>
+            <li>腦海中反覆出現的想法、揮之不去的各種煩惱</li>
+          </ul>
+          <strong>白栗花精能量:思緒清澈、讓腦海寧靜</strong>
+        </div>
+
+        <div class="bach_item" id="Wild_Oat">
+          <h3>
+            野燕麥花精
+            <small>Wild oat</small>
+          </h3>
+          <ul>
+            <li>
+              尋找人生方向，徘徊在人生十字路口，對小事果斷，但無法決定生涯大方向
+            </li>
+            <li>無法確定人生合適之路，對目前生活不滿卻又無法決定走哪一條</li>
+          </ul>
+          <strong>野燕麥花精能量:瞭解自己要的是什麼，確立目標，勇往直前</strong>
+        </div>
+
+        <div class="bach_item" id="Wild_Rose">
+          <h3>
+            野玫瑰花精
+            <small>Wild Rose</small>
+          </h3>
+          <ul>
+            <li>自我放棄的狀態、不想改善現狀、冷漠</li>
+            <li>屈於生命的安排，沒有抱怨、也不會掙扎</li>
+          </ul>
+          <strong>野玫瑰花精能量:重拾生命中的希望和樂趣、改變並體驗生活</strong>
+        </div>
+
+        <div class="bach_item" id="Willow">
+          <h3>
+            楊柳花精
+            <small>Willow</small>
+          </h3>
+          <ul>
+            <li>自怨自艾、怨天尤人，覺得人生很不公平</li>
+            <li>受害者情結，總是抱怨別人、環境、人生…</li>
+          </ul>
+          <strong
+            >楊柳花精能量:停止指責，了解自己是有責任的，有能力作出不同的選擇</strong
+          >
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 第四頁應用情境 -->
+    <div class="situation_page" id="situation" data-aos="fade-up">
+        <h1>常見應用情境</h1>
+      <div class="card_group">
+        <div class="card_item">
+          <div class="front">
+            <p>
+              心中的苦悶已經滿載，但在人前總是表現出開朗的樣子，無法獨處，總找事作把自己填滿，藉此迴避心中的問題
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>龍芽草花精:</b><br />
+              勇於面對心裡的問題
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              會莫明的感到害怕、對未知的事物感到恐懼，例如:死亡、黑暗、幽靈、未來…等，感到莫明的心慌和緊張焦慮
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>白楊花精:</b><br />
+              心寧安定
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              會忍不住的批評，容易覺得別人笨，尤其別人的方式與自己不同時會更嚴重
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>山毛櫸花精:</b><br />
+              包容不同的聲音
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              對於別人的要求，總是無法拒絕，委屈自己的配合別人
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>矢車菊花精:</b><br />
+              明確表達立場
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              很難自己下決定，總是要不斷詢問別人意見，或不斷的算命，越聽越複雜，反而讓自己更困惑，更無法決定
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>水蕨花精:</b><br />
+              傾聽自己內在的聲音，相信自己的判斷
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              忍受小孩不斷的哭鬧，自己處在情緒爆發的邊緣，或在減重、戒煙、戒酒期間害怕失控的情緒
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>櫻桃李花精:</b><br />
+              明智的看待問題、舒解情緒自然流露
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              考試總錯同一題、重複相同錯誤的感情，或工作總在同一個地方出錯。重複著相同的問題
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>栗苞花精:</b><br />
+              從錯誤的經驗中學習成長
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              害怕自己在所愛的人心中失去份量，容易藉由關心的名義來體現自己的存在、或不斷給忠告影響對方的決定，展現自己的重要性
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>菊苣花精:</b><br />
+              無條件的愛
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              追劇、動漫、小說…覺得另外一個世界的生活比較有趣，而大部份時間沉溺其中，覺得現實生活太無趣，無法在現實生活中體驗與感受
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>鐵線蓮花精:</b><br />
+              築夢踏實、實現夢想
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              總覺得外界環境很髒，需要不斷的清潔，也無法接受自己的外表有瑕疵。對於細節有高度的要求，例如物品擺放的順序，要生活在自己的秩序中，才感到安全
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>野生酸蘋果(海棠)花精:</b><br />
+              淨化，接受並喜愛真正的自己
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              用心準備了很久的考試或報告，在考前或上台前一刻突然對自己失去信心，擔心自己作不到
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>榆樹花精:</b><br />
+              盡力後並心安理得
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              被拒絕、考試落榜、學習遭受到挫折…等，被前一次的失敗經驗打擊，而失去再次挑戰的勇氣
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>龍膽花精:</b><br />
+              提振信心，視挫折為學習的機會
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              長期陷在某種困境當中，覺得沒有希望，什麼方法也沒用，也覺得不可能改善了
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>荊豆花精:</b><br />
+              黑夜的盡頭就是陽光，恢復希望
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              只關注自已的問題，而一直訴說自己的感受，忘了別人的立場感受，無法獨處而不停找人說話，不斷的談論自己的事
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>石楠花精:</b><br />
+              找到內在的平靜，自在的獨處
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              感覺被背叛或被欺騙，心中升起忌妒、憎恨、憤怒、報復、猜疑等強烈負面情緒時
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>冬青花精:</b><br />
+              寬容體諒，消融消融強烈負面情緒
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              總是懷念著以前美好的時光，感就輝煌的過去、孩童時期、某一任的戀人。或是總拿以前發生的事來比較，難以感受到現在的美好
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>忍冬花精:</b><br />
+              回到現實，珍惜現在，讓過去美好的經歷成為今後生活的原動力
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              想到明天要上班、交作業、一堆該作還沒完成的事，一想起就突然覺得好累，想躺平
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>鵝耳櫪花精:</b><br />
+              重拾熱情、消除拖延
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              看到別人動作慢或需要等待，就沒耐心而容易生氣，一開始如果沒進入重點或吸引自己注意就容易不耐煩
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>鳳仙花花精:</b><br />
+              耐心而從容
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              總是對自己沒自信，不經意就拿自己和別人比較，覺得自己能力不如人，先入為主的覺得自己作不到，迴避嘗試的機會
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>落葉松花精:</b><br />
+              自信投入、勇於嘗試
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              想到看醫生、考試、失業、登高…就感到恐懼，對特定的人事物感到恐懼的狀態
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>溝酸漿花精:</b><br />
+              勇敢樂觀
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              生理前容易感到鬱悶，或下雨天、秋天季節的影響，原因不明的就陷入憂鬱，過一陣子就突然好了，反覆起伏著
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>芥末花精:</b><br />
+              正面陽光、驅散陰鬱
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              就算身體己經往疲勞了，還是無法讓自己休息，強烈的責任感，讓自己無法停下來
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>橡樹花精:</b><br />
+              認清身體的極限，重視自我狀態
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              身心俱疲、能量耗盡，怎麼休息睡眠也無法回復活力，精疲力盡連玩樂的力氣也沒有
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>橄欖花精:</b><br />
+              恢復元氣、得到充份的休息和支持
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              強烈的罪惡感，自我標準高，不斷的批判自己，總覺得自己總是作得不夠好，自我價值感低落
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>松樹花精:</b><br />
+              停止自我苛責，寬恕自己
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              無法停止擔心身旁的家人朋友，不自覺把有關他們的事往壞處想，有時因過度擔心而顯得嘮叨
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>紅栗花精:</b><br />
+              信相對方是受到祝福的
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              任何被嚇到的時刻，經歷意外事件或作惡夢被嚇醒，感到極度恐懼，腦袋一片空白
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>岩薔薇花精:</b><br />
+              沉著穩定、相信自己能安然渡過
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              嚴以律己，不自覺的會嚴格堅持某種作法或想法，覺得這樣才是對的、好的，而忽略自己真正需要的是什麼
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>岩水花精:</b><br />
+              靈活彈性、善待自己
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              時常有選不出來的狀況，從餐點、購物、穿衣…猶豫不決，就算決定了也很快後悔而陷入迷惘。
+              在情緒方面容易在開心、難過間起伏，或信心滿滿、低落的狀態中起伏
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>線球草花精:</b><br />
+              果斷不猶疑
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              經歷了創傷事件，或失去摯愛，傷痛的感覺無法平息，表面上看起來沒事，但創傷記憶被喚醒就會感到痛苦
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>聖星百合花精:</b><br />
+              撫平創傷，心靈得到慰藉
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              經過許多嘗試還是無法突破困境，感到深沉的絕望，有如在無盡的黑暗中，感覺就要承受就要越過自己的極限，面臨嚴重的痛苦折磨
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>甜栗花精:</b><br />
+              保有光明希望，不至於陷入絕望
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              為了讓旁人、社會、世界更美好的信念，而努力說服別人，或試圖改變別人的思考，因過度熱衷而讓自己感到身心緊繃無法放鬆
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>馬鞭草花精:</b><br />
+              理解並接受他人的想法，尊重別人的自由
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              習慣使用命令的方式要求別人，要是對方不聽從容易使出高壓的言語或手段，不在乎對方的感受，不遵從自己就容易生氣，幾乎沒有溝通的空間
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>葡萄花精:</b><br />
+              胸襟廣闊，果決而不獨斷
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              面臨搬家、轉職、結束一段關係、生產後…人生變動階段，需要重新適應的情況。也容易因外在的環境或旁人的情緒，自己的容易受到影響
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>胡桃花精:</b><br />
+              適應改變的人、事物、環境，順利過渡到新階段
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              自我優越感，比起群眾感覺自己一個人比較自在，注重自己的隱私和空間，因對人際交流有壓力，讓人覺得有距離，不易接近
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>水堇花精:</b><br />
+              敞開情感，融入群體相互交流，同時保有自己的冷靜與智慧
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              該休息放鬆的時刻，腦中卻停不下來，無法停止的和自己對話，沒有重點的思考著，跳針般的無法停止
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>白栗花精:</b><br />
+              思緒清澈、讓腦海寧靜
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              想努力卻找不到方向，總覺得這些都不是自己想要的，會有經常換工作、伴侶的狀況，一直在尋找畢生的事業和方向，不知道自己真正想要的是什麼
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>野燕麥花精:</b><br />
+              瞭解自己要的是什麼，確立目標，勇往直前
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              對生命失去任何的感覺，隨波逐流，冷莫不關心，表面上是隨遇而安，實際上是放棄任何改變的希望
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>野玫瑰花精:</b><br />
+              重拾生命中的希望和樂趣、改變並體驗生活
+            </p>
+          </div>
+        </div>
+
+        <div class="card_item">
+          <div class="front">
+            <p>
+              感覺自己是受害者，抱怨外界是造成的原因，覺得別人都比自己幸運
+            </p>
+          </div>
+          <div class="back">
+            <p>
+              <b>楊柳花精:</b><br />
+              停止指責，了解自己是有責任的，有能力作出不同的選擇
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="placeholder"></div>
+
+    
+    <footer id='footer' class="footer_content">
+      <div class="footer_arrow">
+        <svg width="100" height="25">
+          <path class="arrow_line" d='M 1 25 L 70 25 C 66.3333 23 62.6667 21 59 19 C 59.3333 19.3333 59.6667 19.6667 60 20 L 69 25'fill='none'/>
+        </svg>
+      </div>
+      <a href="https://forms.gle/BKUHJ8fbhuCpmNvg6" target="_blank" class="footer_text">CONTACT</a>
+      <p class="copyright">
+        &copy;  by ollie-L
+      </p>
+    </footer>
+
+    <script>
+      AOS.init({
+        duration: 3000, 
+        // easing: 'easeInOutBack',
+      });
+    </script>
+  </body>
+</html>
