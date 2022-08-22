@@ -510,7 +510,7 @@ a{
   stroke-width: 1px;
   stroke-dasharray: 70;
   stroke-dashoffset: 70;
-  animation: arrow 1.5s ease 20 forwards;
+  animation: arrow 1.5s ease infinite forwards;
 }
 
 .copyright{
