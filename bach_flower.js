@@ -65,4 +65,17 @@ let flowerAry=[
         }
         return newAry;
       }
+
+      // donationAlert
+      function donationAlert() {
+        Swal.fire({
+          title:"中信App QRcode",
+          imageUrl: "donation.jpg",
+          imageHeight: 150,
+          imageWidth:150,
+          imageAlt: "donationJpg",
+          // footer:"822 059540139686",
+          confirmButtonText:"關閉"
+        });
+      }
   
