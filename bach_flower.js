@@ -74,7 +74,7 @@ let flowerAry=[
           imageHeight: 150,
           imageWidth:150,
           imageAlt: "donationJpg",
-          // footer:"822 059540139686",
+          footer:"822 059540139686",
           confirmButtonText:"關閉"
         });
       }
